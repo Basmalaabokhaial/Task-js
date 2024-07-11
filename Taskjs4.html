@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="i">
+    <input type="number" id="p" min="1">
+    
+    <input type="button" id="o" value="repeat" onclick="l()">
+    <p id="u"></p>
+    <script>
+        function l(){
+            
+            var num = document.getElementById('p').value;
+            var txt = document.getElementById('i').value +'<br>';
+            document.getElementById('u').innerHTML = txt . repeat(num);
+        }
+    </script>
+</body>
+</html>
